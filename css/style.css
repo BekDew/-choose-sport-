@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+
+.sport {
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+}
+
+.forum_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form_title {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+input[type="checkbox"] {
+  appearance: none;
+}
+
+.checkbox_label .checkbox:focus ~ .checkbox_input {
+  background-color: #ccc;
+  border: 2px solid #0e85f3;
+}
+
+.checkbox_label .checkbox:checked ~ .checkbox_input {
+  opacity: 0.5;
+  border: 1px solid grey;
+}
+
+.checkbox_label .checkbox:checked ~ .label_desc {
+  opacity: 0.5;
+}
+
+
+.checkbox_input {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+  background-image: url(../images/table-tennis.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 5px;
+}
+
+.basketbol {
+  background-image: url(../images/basketball-ball.png);
+}
+
+.voleybol {
+  background-image: url(../images/volleyball-ball.png);
+}
+
+.hokkey {
+  background-image: url(../images/hockey-puck.png);
+}
